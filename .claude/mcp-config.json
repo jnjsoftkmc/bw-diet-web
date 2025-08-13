@@ -1,0 +1,130 @@
+{
+  "mcp_integration": {
+    "version": "1.0.0",
+    "project_type": "react-typescript-diet-app",
+    "auto_activation": {
+      "context7": {
+        "triggers": [
+          "react patterns", 
+          "typescript types", 
+          "zustand state", 
+          "tailwind css",
+          "vite configuration",
+          "nutrition database",
+          "chart.js integration"
+        ],
+        "commands": ["/build", "/implement", "/improve", "/document"],
+        "confidence_threshold": 0.8
+      },
+      "sequential": {
+        "triggers": [
+          "complex analysis",
+          "data analytics", 
+          "trend analysis",
+          "goal progress",
+          "statistical calculation",
+          "predictive modeling",
+          "multi-step reasoning"
+        ],
+        "commands": ["/analyze", "/troubleshoot", "/estimate", "/improve --analytics"],
+        "confidence_threshold": 0.7
+      },
+      "magic": {
+        "triggers": [
+          "ui component",
+          "form design",
+          "responsive layout",
+          "design system",
+          "user interface",
+          "dashboard widget",
+          "chart component"
+        ],
+        "commands": ["/implement --ui", "/design", "/build --frontend"],
+        "confidence_threshold": 0.8
+      },
+      "playwright": {
+        "triggers": [
+          "e2e testing",
+          "user flow testing",
+          "cross-browser testing",
+          "performance testing",
+          "accessibility testing",
+          "mobile testing"
+        ],
+        "commands": ["/test", "/validate", "/improve --performance"],
+        "confidence_threshold": 0.9
+      }
+    },
+    "personas": {
+      "frontend": {
+        "auto_activate_on": [
+          "ui component requests",
+          "styling issues", 
+          "responsive design",
+          "user experience",
+          "accessibility"
+        ],
+        "preferred_mcp": ["magic", "context7"]
+      },
+      "architect": {
+        "auto_activate_on": [
+          "system design",
+          "architecture decisions",
+          "scalability planning",
+          "technical debt"
+        ],
+        "preferred_mcp": ["sequential", "context7"]
+      },
+      "analyzer": {
+        "auto_activate_on": [
+          "data analysis",
+          "trend investigation",
+          "performance analysis",
+          "debugging complex issues"
+        ],
+        "preferred_mcp": ["sequential", "playwright"]
+      },
+      "qa": {
+        "auto_activate_on": [
+          "testing strategies",
+          "quality assurance",
+          "validation workflows",
+          "edge case testing"
+        ],
+        "preferred_mcp": ["playwright", "sequential"]
+      }
+    },
+    "project_patterns": {
+      "diet_app_specific": {
+        "calorie_calculations": {
+          "mcp": "sequential",
+          "persona": "analyzer",
+          "pattern": "systematic calculation validation"
+        },
+        "weight_tracking": {
+          "mcp": "magic",
+          "persona": "frontend", 
+          "pattern": "data visualization components"
+        },
+        "nutrition_analysis": {
+          "mcp": "sequential",
+          "persona": "analyzer",
+          "pattern": "complex data processing"
+        },
+        "user_onboarding": {
+          "mcp": "magic",
+          "persona": "frontend",
+          "pattern": "progressive form design"
+        }
+      }
+    },
+    "performance_targets": {
+      "bundle_size": "< 500KB gzipped",
+      "first_contentful_paint": "< 1.5s",
+      "largest_contentful_paint": "< 2.5s", 
+      "cumulative_layout_shift": "< 0.1",
+      "accessibility_score": "> 90",
+      "test_coverage": "> 80%"
+    }
+  }
+}
